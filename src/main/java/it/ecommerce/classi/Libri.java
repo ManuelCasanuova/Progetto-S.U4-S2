@@ -28,9 +28,10 @@ public class Libri extends CatalogoBibliotecario{
 
     @Override
     public String toString() {
-        return "Libri{" +
-                "autore='" + autore + '\'' +
-                ", genere='" + genere + '\'' +
-                '}';
+        return super.toString()  +
+                "Autore= " + autore + '\n' +
+                "Genere= " + genere + '\n' +
+                "Tipologia= Libro"
+                ;
     }
 }

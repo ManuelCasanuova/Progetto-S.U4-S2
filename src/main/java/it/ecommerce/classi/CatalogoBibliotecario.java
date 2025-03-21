@@ -1,24 +1,24 @@
 package it.ecommerce.classi;
 
 public abstract class CatalogoBibliotecario {
-    private String ISBN;
+    private String isbn;
     private String titolo;
     private int annoPubblicazione;
     private int numeroPagine;
 
-    public CatalogoBibliotecario(String ISBN, String titolo, int annoPubblicazione, int numeroPagine) {
-        this.ISBN = ISBN;
+    public CatalogoBibliotecario(String isbn, String titolo, int annoPubblicazione, int numeroPagine) {
+        this.isbn = isbn;
         this.titolo = titolo;
         this.annoPubblicazione = annoPubblicazione;
         this.numeroPagine = numeroPagine;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setISBN(String isbn) {
+        this.isbn = isbn;
     }
 
     public int getNumeroPagine() {
@@ -47,11 +47,12 @@ public abstract class CatalogoBibliotecario {
 
     @Override
     public String toString() {
-        return "CatalogoBibliotecario{" +
-                "ISBN='" + ISBN + '\'' +
-                ", titolo='" + titolo + '\'' +
-                ", annoPubblicazione=" + annoPubblicazione +
-                ", numeroPagine=" + numeroPagine +
-                '}';
+        return
+                "\n" +
+                "ISBN= " + isbn + '\n' +
+                "Titolo= " + titolo + '\n' +
+                "Anno di pubblicazione= " + annoPubblicazione + '\n' +
+                "Numero delle Pagine= " + numeroPagine + '\n'
+                ;
     }
 }
