@@ -13,9 +13,9 @@ public class ArchivioMain {
         Archivio archivio = new Archivio();
         archivio.getCatalogo().addAll(catalogoHelper.getCatalogo());
 
-        System.out.println("************************************************");
-        System.out.println("Benvenuto nell'archivio bibliotecario di Manuel!");
-        System.out.println("************************************************");
+        System.out.println("*************************************");
+        System.out.println("Benvenuto nella biblioteca di Manuel!");
+        System.out.println("*************************************");
         System.out.println("");
 
         while (true) {
