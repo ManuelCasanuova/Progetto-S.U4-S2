@@ -25,18 +25,15 @@ public class Archivio {
     }
 
     public CatalogoBibliotecario ricercaPerISBN(String isbn) {
-       try {
-           return catalogo.stream()
-                   .filter(elemento -> elemento.getIsbn().equals(isbn))
-                   .findFirst()
-                   .get();
+        try {
+            return catalogo.stream()
+                    .filter(elemento -> elemento.getIsbn().equals(isbn))
+                    .findFirst()
+                    .orElseThrow(() -> new Exception("Elemento con ISBN " + isbn + " non trovato"));
+        } catch (Exception e) {
 
-       } catch (Exception e) {
-           System.out.println("Errore nella ricerca per ISBN: " + e.getMessage());
-           return null;
-
-       }
-
+            return null;
+        }
     }
 
    public void rimuoviElemento (String isbn) {
