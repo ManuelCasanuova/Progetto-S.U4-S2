@@ -31,7 +31,6 @@ public class Archivio {
                     .findFirst()
                     .orElseThrow(() -> new Exception("Elemento con ISBN " + isbn + " non trovato"));
         } catch (Exception e) {
-
             return null;
         }
     }

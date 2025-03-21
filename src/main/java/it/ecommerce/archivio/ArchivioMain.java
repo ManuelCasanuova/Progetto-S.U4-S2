@@ -87,7 +87,6 @@ public class ArchivioMain {
                                 System.out.println("Ricerca di un libro o di una rivista");
                                 System.out.println("Inserisci l'ISBN");
                                 String isbn = scanner.nextLine();
-                                archivio.ricercaPerISBN(isbn);
                                 System.out.println("");
                                 System.out.println("Elemento con ISBN " + isbn + " ricercato è: " + archivio.ricercaPerISBN(isbn));
                                 System.out.println("");
@@ -106,7 +105,6 @@ public class ArchivioMain {
                                 System.out.println("Ricerca di un libro o di una rivista per anno");
                                 System.out.println("Inserisci l'anno");
                                 int anno = scanner.nextInt();
-                                archivio.ricercaPerAnno(anno);
                                 System.out.println("");
                                 System.out.println("Elementi con anno di pubblicazione " + anno + ":" + archivio.ricercaPerAnno(anno));
                                 System.out.println("");
@@ -115,7 +113,6 @@ public class ArchivioMain {
                                 System.out.println("Ricerca di un libro o di una rivista per autore");
                                 System.out.println("Inserisci l'autore");
                                 String autore = scanner.nextLine();
-                                archivio.ricercaPerAutore(autore);
                                 System.out.println("");
                                 System.out.println("Elementi con autore " + autore + ":" + archivio.ricercaPerAutore(autore));
                                 System.out.println("");
