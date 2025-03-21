@@ -169,7 +169,7 @@ public class ArchivioMain {
                                 archivio.stampaStatistiche();
                                 break;
                 case 0:
-                                System.out.println("Grazie di aver visistato l'archivio bibliotecario di Manuel, arrivederci!");
+                                System.out.println("Grazie di aver visistato la biblioteca di Manuel, arrivederci!");
                                 return;
                 default:
                     System.out.println("Scelta non valida.");
