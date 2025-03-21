@@ -4,8 +4,8 @@ public class Libri extends CatalogoBibliotecario{
     private String autore;
     private String genere;
 
-    public Libri(String ISBN, String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {
-        super(ISBN, titolo, annoPubblicazione, numeroPagine);
+    public Libri(String isbn, String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {
+        super(isbn, titolo, annoPubblicazione, numeroPagine);
         this.autore = autore;
         this.genere = genere;
     }

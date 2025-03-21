@@ -57,7 +57,6 @@ public class ArchivioMain {
                                 System.out.println("Inserisci il genere del libro");
                                 String genere = scanner.nextLine();
                                 archivio.aggiungiElemento(new Libri(isbn, titolo, annoPubblicazione, numeroPagine, autore, genere));
-
                                 System.out.println("");
                             }else if(selezione==2) {
                                 System.out.println("");
@@ -146,7 +145,7 @@ public class ArchivioMain {
                                         System.out.println("Aggiorna il genere del libro");
                                         String genere = scanner.nextLine();
                                         archivio.aggiornaElemento(isbn, new Libri(isbn, titolo, annoPubblicazione, numeroPagine, autore, genere));
-                                        archivio.stampaCatalogo();
+
                                     } else if (archivio.ricercaPerISBN(isbn) instanceof Riviste) {
                                         System.out.println("Aggiorna il titolo della rivista");
                                         String titolo = scanner.nextLine();
@@ -162,7 +161,7 @@ public class ArchivioMain {
                                         scanner.nextLine();
                                         Periodicita periodicita = sceltaPeriodicita == 1 ? Periodicita.SETTIMANALE : sceltaPeriodicita == 2 ? Periodicita.MENSILE : Periodicita.SEMESTRALE;
                                             archivio.aggiornaElemento(isbn,new Riviste(isbn, titolo, annoPubblicazione, numeroPagine, periodicita));
-                                            archivio.stampaCatalogo();
+
                                     } else {
                                         System.out.println("Scelta non valida");
                                     }
